@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #f7f8ff;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #7064a4;
+    background-color: #f7f8ff;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contenedor {
+    width: 88%;
+    max-width: none;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    padding: 1.8vw 0 0.75vw;
+    background-color: #f0efff;
+}
+
+.navbar {
+    width: 92.5%;
+    max-width: none;
+    min-height: 4.9vw;
+    margin: 0 auto;
+    padding: 0.45vw 2.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 999px;
+    box-shadow: 0 0.22vw 0.6vw rgba(70, 62, 130, 0.16);
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 12vw;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav-links a {
+    padding: 0.55vw 1.18vw;
+    font-size: 1.44vw;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #555477;
+    border-radius: 999px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+    background-color: #d5d0ff;
+    color: #61548f;
+}
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    height: 38vw;
+    display: flex;
+    align-items: flex-start;
+    padding: 2.08vw 5.6% 0;
+    background: linear-gradient(
+        130deg,
+        #f0efff 0%,
+        #ebefff 45%,
+        #dbeaff 100%
+    );
+    overflow: hidden;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    max-width: none;
+    padding-top: 0.5vw;
+}
+
+.hero-etiqueta {
+    margin-bottom: 2.08vw;
+    font-size: 1.44vw;
+    font-weight: 700;
+    color: #514d79;
+}
+
+.hero h1 {
+    margin-bottom: 0.96vw;
+    font-size: 4.32vw;
+    font-weight: 800;
+    line-height: 1.2;
+    white-space: nowrap;
+    color: #7466a7;
+}
+
+.hero h3 {
+    margin-bottom: 1.28vw;
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: #57506f;
+}
+
+.hero-descripcion {
+    width: 100%;
+    max-width: 45.6vw;
+    font-size: 1.6vw;
+    line-height: 1.5;
+    color: #625c7d;
+}
+
+.hero-botones {
+    display: flex;
+    align-items: center;
+    gap: 3.2vw;
+    margin-top: 5.6vw;
+}
+
+.hero .hero-botones a.btn-principal,
+.hero .hero-botones a.btn-secundario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8vw 1.92vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6vw;
+    line-height: 1.3;
+    white-space: nowrap;
+    border-radius: 9999px !important;
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        transform 0.3s;
+}
+
+.hero .hero-botones a.btn-principal {
+    background-color: #8163c8;
+    color: #ffffff;
+    border: 1.5px solid transparent;
+    border-radius: 9999px !important;
+}
+
+.hero .hero-botones a.btn-principal:hover {
+    background-color: #684aa9;
+    transform: translateY(-2px);
+}
+
+.hero .hero-botones a.btn-secundario {
+    background-color: transparent;
+    color: #8163c8;
+    border: 1.5px solid #906de4;
+    border-radius: 9999px !important;
+}
+
+.hero .hero-botones a.btn-secundario:hover {
+    background-color: #e2d8ff;
+    transform: translateY(-2px);
+}
+
+.hero-personaje {
+    position: absolute;
+    right: -0.3%;
+    bottom: 0;
+    width: 66%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+
+.hero-personaje img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right bottom;
+}
+.acerca {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: 36.8vw;
+    padding: 3.52vw 0 1.92vw;
+    background-color: #f8faff;
+    border-top: 1.6vw solid white;
+    border-bottom: 1.6vw solid white;
+    overflow: hidden;
+}
+
+.acerca .contenedor {
+    position: relative;
+}
+
+.acerca-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 1.6vw;
+    margin-bottom: 1.6vw;
+    position: relative;
+    z-index: 2;
+}
+
+.icono-usuario {
+    width: 3.84vw;
+    height: 3.84vw;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.acerca-encabezado h2 {
+    font-size: 2.72vw;
+    font-weight: 800;
+    white-space: nowrap;
+    color: #7466a7;
+}
+
+.linea {
+    flex: 1;
+    height: 1px;
+    background-color: #8664db;
+}
+
+.etiqueta-estudiante {
+    padding: 0.32vw 2.4vw;
+    background-color: #d5d0ff;
+    border-radius: 50px;
+    color: #7466a7;
+    font-size: 1.92vw;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.acerca-texto {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: none;
+}
+
+.acerca-texto p {
+    margin-bottom: 1.6vw;
+    font-size: 2.24vw;
+    line-height: 1.5;
+    color: #7064a4;
+}
+
+.acerca-texto p:first-child {
+    width: 100%;
+}
+
+.acerca-texto p:nth-child(2) {
+    width: 76%;
+    max-width: 76%;
+}
+
+.decoracion-estrella {
+    position: absolute;
+    width: 7.2vw;
+    height: auto;
+    right: 4%;
+    bottom: 2.2vw;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.habilidades {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.92vw;
+    margin-top: 4.8vw;
+}
+
+.habilidades span {
+    display: inline-block;
+    min-width: 17.6vw;
+    padding: 0.32vw 2.4vw;
+    background-color: #d5d0ff;
+    border-radius: 50px;
+    font-size: 1.92vw;
+    line-height: 1.2;
+    text-align: center;
+    color: #7064a4;
+}
+.servicios {
+    width: 100%;
+    min-height: 40vw;
+    padding: 5.12vw 0 8vw;
+    background: linear-gradient(
+        160deg,
+        #f0efff 0%,
+        #e7efff 70%,
+        #dbeaff 100%
+    );
+}
+
+.contenedor-servicios {
+    width: 96%;
+    max-width: none;
+    margin: 0 auto;
+}
+
+.servicios h2 {
+    margin: 0 3.5% 3.2vw;
+    font-size: 2.72vw;
+    font-weight: 800;
+    line-height: 1.5;
+    color: #7466a7;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.6vw;
+}
+
+.servicio-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6vw;
+    min-width: 0;
+    min-height: 19.2vw;
+    padding: 1.28vw 1.28vw 5.12vw;
+    background-color: white;
+    border-radius: 1.12vw;
+    box-shadow: 0 4px 5px rgba(69, 98, 157, 0.25);
+    transition: transform 0.3s;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+}
+
+.servicio-icono {
+    width: 8.8vw;
+    height: 8.8vw;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.servicio-info {
+    min-width: 0;
+    padding-top: 1.92vw;
+}
+
+.servicio-info h3 {
+    margin-bottom: 0.8vw;
+    font-size: 2.08vw;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #7466a7;
+}
+
+.servicio-info p {
+    font-size: 1.44vw;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    color: #7064a4;
+}
+
+.servicio-flecha {
+    position: absolute;
+    left: 4vw;
+    bottom: 1.92vw;
+    display: block;
+    width: 3.52vw;
+    height: 3.52vw;
+    transition: transform 0.3s;
+}
+
+.servicio-flecha img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.servicio-flecha:hover {
+    transform: translateX(3px);
+}
+
+
+/* PORTAFOLIO */
+
+.portafolio {
+    width: 100%;
+    background-color: white;
+}
+
+.portafolio-encabezado {
+    width: 100%;
+    padding: 3.2vw 5%;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.portafolio-encabezado h2 {
+    font-size: 2.72vw;
+    font-weight: 800;
+    white-space: nowrap;
+    color: #7466a7;
+}
+
+.portafolio-linea {
+    flex: 1;
+    height: 1px;
+    background-color: #8664db;
+}
+
+@media (max-width: 560px) {
+
+    .header {
+        padding: 15px 3% 8px;
+    }
+
+    .navbar {
+        width: 94%;
+        min-height: 0;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+        border-radius: 999px;
+    }
+
+    .logo img {
+        width: 85px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+        padding: 4px 7px;
+    }
+
+    .hero {
+        min-height: 450px;
+        height: auto;
+        align-items: flex-start;
+        padding: 35px 6% 0;
+    }
+
+    .hero-contenido {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-etiqueta {
+        font-size: 10px;
+        margin-bottom: 14px;
+    }
+
+    .hero h1 {
+        font-size: clamp(22px, 6vw, 31px);
+        white-space: normal;
+        margin-bottom: 8px;
+    }
+
+    .hero h3 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .hero-descripcion {
+        max-width: 270px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .hero-botones {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .hero .hero-botones a.btn-principal,
+    .hero .hero-botones a.btn-secundario {
+        padding: 8px 14px;
+        font-size: 12px;
+        border-radius: 9999px !important;
+    }
+
+    .hero-personaje {
+        width: 95%;
+        height: 245px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .acerca {
+        min-height: 0;
+        padding: 22px 0 18px;
+        border-top: 10px solid white;
+        border-bottom: 10px solid white;
+    }
+
+    .acerca-encabezado {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .icono-usuario {
+        width: 24px;
+        height: 24px;
+    }
+
+    .acerca-encabezado h2 {
+        font-size: 18px;
+    }
+
+    .linea {
+        min-width: 40px;
+    }
+
+    .etiqueta-estudiante {
+        padding: 3px 10px;
+        font-size: 10px;
+    }
+
+    .acerca-texto p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .acerca-texto p:nth-child(2) {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .decoracion-estrella {
+        width: 46px;
+        right: 4%;
+        bottom: 14px;
+    }
+
+    .habilidades {
+        gap: 8px;
+        margin-top: 25px;
+    }
+
+    .habilidades span {
+        min-width: 0;
+        padding: 4px 12px;
+        font-size: 10px;
+    }
+
+    .servicios {
+        min-height: 0;
+        padding: 32px 0 40px;
+    }
+
+    .servicios h2 {
+        margin: 0 0 18px;
+        font-size: 19px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .servicio-card {
+        min-height: 115px;
+        gap: 12px;
+        padding: 12px 12px 34px;
+        border-radius: 8px;
+    }
+
+    .servicio-icono {
+        width: 55px;
+        height: 55px;
+    }
+
+    .servicio-info {
+        padding-top: 8px;
+    }
+
+    .servicio-info h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .servicio-info p {
+        font-size: 12px;
+    }
+
+    .servicio-flecha {
+        left: 24px;
+        bottom: 12px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .portafolio-encabezado {
+        gap: 10px;
+        padding: 20px 4%;
+    }
+
+    .portafolio-encabezado h2 {
+        font-size: 12px;
+    }
+
+}

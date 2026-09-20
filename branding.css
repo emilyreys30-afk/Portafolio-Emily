@@ -1,0 +1,351 @@
+
+#branding.portafolio {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.branding-astro {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 667 / 812;
+
+    background: linear-gradient(
+        145deg,
+        #f0efff 0%,
+        #e9edff 45%,
+        #dce8ff 100%
+    );
+
+    overflow: hidden;
+}
+
+.branding-astro > img {
+    position: absolute;
+
+    display: block;
+    max-width: none;
+
+    height: auto;
+    object-fit: contain;
+}
+
+
+.branding-decoracion {
+    display: none;
+}
+.astro-empaques {
+    width: 55%;
+
+    left: 2%;
+    top: 9%;
+
+    z-index: 2;
+}
+.astro-logo {
+    width: 29%;
+
+    right: 9%;
+    top: 8%;
+
+    z-index: 3;
+}
+.astro-descripcion {
+    position: absolute;
+
+    width: 34%;
+
+    right: 6%;
+    top: 19%;
+
+    z-index: 4;
+
+    color: #7064a4;
+}
+
+.astro-descripcion h3 {
+    margin-bottom: 0.5vw;
+
+    font-size: 2.6vw;
+    font-weight: 800;
+    line-height: 1.3;
+
+    color: #7064a4;
+}
+
+.astro-descripcion p {
+    margin: 0;
+
+    font-size: 2.2vw;
+    font-weight: 400;
+    line-height: 1.45;
+
+    overflow-wrap: break-word;
+
+    color: #7064a4;
+}
+.astro-colores {
+    position: absolute;
+
+    width: 50%;
+
+    left: 4%;
+    top: 48%;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 1%;
+}
+
+.astro-color {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 1vw;
+}
+.astro-estrella {
+    display: block;
+
+    width: 83%;
+    aspect-ratio: 1 / 1;
+
+    flex-shrink: 0;
+
+    background-color: currentColor;
+
+    clip-path: none;
+
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='white' d='M50 0 C52 36 58 46 100 50 C58 54 52 64 50 100 C48 64 42 54 0 50 C42 46 48 36 50 0 Z'/%3E%3C/svg%3E");
+
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='white' d='M50 0 C52 36 58 46 100 50 C58 54 52 64 50 100 C48 64 42 54 0 50 C42 46 48 36 50 0 Z'/%3E%3C/svg%3E");
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+
+.astro-hex {
+    display: block;
+
+    width: 100%;
+
+    font-size: 2.15vw;
+    font-weight: 400;
+    line-height: 1.3;
+
+    text-align: center;
+    white-space: nowrap;
+}
+
+.color-uno {
+    color: #3a2e5f;
+}
+
+.color-dos {
+    color: #6948a5;
+}
+
+.color-tres {
+    color: #cf6ee3;
+}
+
+.color-cuatro {
+    color: #e47ef7;
+}
+.astro-camisetas {
+    position: absolute;
+
+    width: 46%;
+
+    right: 0;
+    top: 44%;
+    bottom: auto;
+
+    height: auto;
+
+    z-index: 2;
+}
+
+.astro-pines {
+    position: absolute;
+
+    width: 43%;
+
+    left: 4%;
+    bottom: 10%;
+
+    height: auto;
+
+    z-index: 3;
+}
+
+@media (max-width: 560px) {
+
+    /* CONTENEDOR */
+
+    .branding-astro {
+        aspect-ratio: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 18px;
+        padding: 25px 5%;
+    }
+
+
+    .branding-decoracion {
+        display: none;
+    }
+
+
+    .branding-astro .astro-empaques {
+        position: relative;
+
+        width: 100%;
+        max-width: 420px;
+
+        left: auto;
+        right: auto;
+
+        top: auto;
+        bottom: auto;
+
+        margin: 0 auto;
+    }
+
+
+
+    .branding-astro .astro-logo {
+        position: relative;
+
+        width: 75%;
+        max-width: 280px;
+
+        left: auto;
+        right: auto;
+
+        top: auto;
+        bottom: auto;
+
+        margin: 0 auto;
+    }
+
+
+
+    .astro-descripcion {
+        position: relative;
+
+        width: 100%;
+        max-width: 420px;
+
+        left: auto;
+        right: auto;
+
+        top: auto;
+        bottom: auto;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .astro-descripcion h3 {
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    .astro-descripcion p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+
+    .astro-colores {
+        position: relative;
+
+        width: 100%;
+        max-width: 420px;
+
+        left: auto;
+        right: auto;
+
+        top: auto;
+        bottom: auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        gap: 5px;
+
+        margin: 15px auto;
+    }
+
+
+    .astro-color {
+        gap: 5px;
+    }
+
+    .astro-estrella {
+        width: 75%;
+    }
+
+
+    .astro-hex {
+        font-size: clamp(8px, 2.4vw, 12px);
+    }
+
+
+
+    .branding-astro .astro-camisetas {
+        position: relative;
+
+        width: 100%;
+        max-width: 420px;
+
+        left: auto;
+        right: auto;
+
+        top: auto;
+        bottom: auto;
+
+        margin: 0 auto;
+    }
+
+
+
+    .branding-astro .astro-pines {
+        position: relative;
+
+        width: 100%;
+        max-width: 420px;
+
+        left: auto;
+        right: auto;
+
+        top: auto;
+        bottom: auto;
+
+        margin: 0 auto;
+    }
+
+}

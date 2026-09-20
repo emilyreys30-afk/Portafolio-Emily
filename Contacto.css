@@ -1,0 +1,282 @@
+
+.contacto-seccion {
+    width: 100%;
+    background: linear-gradient(90deg, #dfe8ff 0%, #edf2ff 100%);
+    padding: 3.5vw 4% 4vw;
+    overflow: hidden;
+}
+
+.contacto-contenido {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 34% 66%;
+    align-items: center;
+    gap: 2vw;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto-info h2 {
+    margin: 0 0 0.8vw 0;
+
+    font-size: 4vw;
+    font-weight: 800;
+    line-height: 1.1;
+
+    color: #66579d;
+}
+
+.contacto-info h2 span {
+    color: #66579d;
+}
+
+.contacto-info p {
+    margin: 0 0 1.8vw 0;
+
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #66579d;
+}
+
+.contacto-ilustracion {
+    width: 75%;
+    max-width: none;
+    height: auto;
+    display: block;
+}
+
+
+.contacto-formulario-contenedor {
+    width: 100%;
+}
+
+.contacto-formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6vw;
+}
+
+
+.campo-formulario {
+    width: 100%;
+    min-height: 4.8vw;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+
+    background-color: #ffffff;
+    border-radius: 999px;
+
+    padding: 0 1.8vw;
+
+    box-shadow: 0 0.35vw 0.6vw rgba(107, 116, 163, 0.18);
+}
+
+.icono-campo {
+    width: 2.2vw;
+    min-width: 2.2vw;
+    height: auto;
+    display: block;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.65vw;
+    font-weight: 600;
+
+    color: #6f6f8e;
+}
+
+.campo-formulario input::placeholder,
+.campo-formulario textarea::placeholder {
+    color: #a8b2cb;
+    opacity: 1;
+}
+
+.campo-textarea {
+    align-items: flex-start;
+    min-height: 14vw;
+
+    border-radius: 2.1vw;
+
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.campo-textarea textarea {
+    resize: none;
+    min-height: 10vw;
+    line-height: 1.5;
+}
+
+
+.btn-contacto {
+    width: 100%;
+    min-height: 4.8vw;
+
+    border: none;
+    border-radius: 999px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8vw;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    background: linear-gradient(90deg, #8663d0 0%, #9268d9 100%);
+
+    box-shadow: 0 0.35vw 0.6vw rgba(107, 116, 163, 0.18);
+
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-contacto:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+
+@media (max-width: 900px) {
+
+    .contacto-seccion {
+        padding: 32px 4% 36px;
+    }
+
+    .contacto-contenido {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .contacto-info h2 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .contacto-info p {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contacto-ilustracion {
+        width: 260px;
+    }
+
+    .contacto-formulario {
+        gap: 14px;
+    }
+
+    .campo-formulario {
+        min-height: 62px;
+        padding: 0 22px;
+        gap: 14px;
+        box-shadow: 0 4px 10px rgba(107, 116, 163, 0.18);
+    }
+
+    .icono-campo {
+        width: 26px;
+        min-width: 26px;
+    }
+
+    .campo-formulario input,
+    .campo-formulario textarea {
+        font-size: 20px;
+    }
+
+    .campo-textarea {
+        min-height: 180px;
+        border-radius: 24px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .campo-textarea textarea {
+        min-height: 120px;
+    }
+
+    .btn-contacto {
+        min-height: 62px;
+        font-size: 22px;
+        box-shadow: 0 4px 10px rgba(107, 116, 163, 0.18);
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .contacto-seccion {
+        padding: 24px 4% 28px;
+    }
+
+    .contacto-contenido {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .contacto-info h2 {
+        font-size: 34px;
+        margin-bottom: 8px;
+    }
+
+    .contacto-info p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .contacto-ilustracion {
+        width: 190px;
+    }
+
+    .contacto-formulario {
+        gap: 12px;
+    }
+
+    .campo-formulario {
+        min-height: 52px;
+        padding: 0 18px;
+        gap: 12px;
+        box-shadow: 0 4px 10px rgba(107, 116, 163, 0.16);
+    }
+
+    .icono-campo {
+        width: 22px;
+        min-width: 22px;
+    }
+
+    .campo-formulario input,
+    .campo-formulario textarea {
+        font-size: 15px;
+    }
+
+    .campo-textarea {
+        min-height: 150px;
+        border-radius: 22px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .campo-textarea textarea {
+        min-height: 95px;
+    }
+
+    .btn-contacto {
+        min-height: 52px;
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,332 @@
+
+.apps-portafolio {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.apps-contenido {
+    width: 100%;
+
+    padding: 3.5vw 4% 4vw;
+
+    background-color: #f8f9ff;
+
+    overflow: hidden;
+}
+
+.apps-superior {
+    display: grid;
+
+    grid-template-columns: 52% 48%;
+
+    align-items: start;
+
+    gap: 0;
+
+    width: 100%;
+
+    margin-bottom: 3vw;
+}
+
+.apps-info {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.apps-logo-principal {
+    display: block;
+
+    width: 32vw;
+    max-width: none;
+    min-width: 0;
+
+    height: auto;
+
+    margin-bottom: 2vw;
+}
+
+
+.apps-info h3 {
+    margin-bottom: 1vw;
+
+    font-size: 2.6vw;
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    color: #7064a4;
+}
+
+
+.apps-info p {
+    width: 100%;
+    max-width: 47vw;
+
+    font-size: 2vw;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: #7064a4;
+}
+
+
+.apps-logo-app {
+    display: block;
+
+    width: 19vw;
+    max-width: none;
+    min-width: 0;
+
+    height: auto;
+
+    margin-top: 2vw;
+
+    object-fit: contain;
+}
+
+
+.apps-mockup-contenedor {
+    position: relative;
+
+    width: 100%;
+    height: 43vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    overflow: visible;
+}
+
+
+.apps-mockup {
+    position: absolute;
+
+    width: 190%;
+    max-width: none;
+    min-width: 0;
+
+    height: auto;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    object-fit: contain;
+}
+
+
+.apps-pantallas-seccion {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 1vw;
+}
+
+.apps-pantallas-seccion h3 {
+    margin-bottom: 1.5vw;
+
+    font-size: 2.6vw;
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    color: #7064a4;
+}
+
+.apps-pantallas {
+    display: block;
+
+    width: 100%;
+    max-width: none;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+
+    .apps-contenido {
+        padding: 30px 4%;
+    }
+
+    .apps-superior {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-bottom: 30px;
+    }
+
+    .apps-info {
+        width: 100%;
+    }
+
+    .apps-logo-principal {
+        width: 45%;
+        max-width: none;
+
+        margin-bottom: 15px;
+    }
+
+    .apps-info h3 {
+        font-size: 28px;
+
+        margin-bottom: 12px;
+    }
+
+    .apps-info p {
+        width: 100%;
+        max-width: 650px;
+
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .apps-logo-app {
+        width: 24%;
+        max-width: none;
+
+        margin-top: 20px;
+    }
+
+    .apps-mockup-contenedor {
+        width: 100%;
+        height: 60vw;
+
+        justify-content: center;
+    }
+
+    .apps-mockup {
+        width: 140%;
+
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+
+
+    .apps-pantallas-seccion {
+        margin-top: 20px;
+    }
+
+    .apps-pantallas-seccion h3 {
+        font-size: 26px;
+
+        margin-bottom: 15px;
+    }
+
+    .apps-pantallas {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+ 
+
+    .apps-contenido {
+        padding: 22px 4% 28px;
+    }
+
+
+
+    .apps-superior {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-bottom: 25px;
+    }
+
+    .apps-logo-principal {
+        width: 58%;
+
+        max-width: none;
+        min-width: 0;
+
+        margin-bottom: 14px;
+    }
+
+
+    .apps-info h3 {
+        font-size: 21px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .apps-info p {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    .apps-logo-app {
+        width: 30%;
+
+        max-width: none;
+        min-width: 0;
+
+        margin-top: 18px;
+    }
+
+
+  
+    .apps-mockup-contenedor {
+        width: 100%;
+
+        height: 65vw;
+
+        overflow: visible;
+    }
+
+    .apps-mockup {
+        width: 120%;
+
+        max-width: none;
+
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+
+
+    .apps-pantallas-seccion {
+        margin-top: 15px;
+    }
+
+    .apps-pantallas-seccion h3 {
+        font-size: 19px;
+
+        margin-bottom: 12px;
+    }
+
+    .apps-pantallas {
+        width: 100%;
+        height: auto;
+    }
+
+}
